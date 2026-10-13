@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tolotraniaina Henri | Développeur Web, DevOps &amp; Data</title>
+  <meta name="description" content="Portfolio de RABESIHARISON Tolotraniaina Henri, étudiant en Master Innovation et Technologie (INT-MIT) à l'Université d'Antananarivo : développement web, DevOps, réseau et système, analyse de données.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#accueil" class="logo">T<span>.</span>Henri</a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#accueil" class="nav__link active">Accueil</a></li>
+        <li><a href="#apropos" class="nav__link">À propos</a></li>
+        <li><a href="#competences" class="nav__link">Compétences</a></li>
+        <li><a href="#projets" class="nav__link">Projets</a></li>
+        <li><a href="#parcours" class="nav__link">Parcours</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Changer le thème">🌙</button>
+        <button class="icon-btn nav__burger" id="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="accueil">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <span class="badge">👋 Ouvert aux stages &amp; opportunités</span>
+          <h1>Bonjour, je suis <span class="gradient-text">Tolotraniaina Henri</span></h1>
+          <h2 class="hero__role">Je suis <span id="typing"></span><span class="cursor">|</span></h2>
+          <p class="hero__text">
+            Étudiant en <strong>Master Innovation et Technologie (INT-MIT)</strong> à l'Université d'Antananarivo,
+            avec une base solide en mathématiques et en programmation. Je construis des applications web,
+            j'automatise avec le DevOps et j'exploite les données avec rigueur.
+          </p>
+          <div class="hero__buttons">
+            <a href="#projets" class="btn btn--primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn--outline">Me contacter</a>
+            <a href="assets/CV-Tolotraniaina-Henri.pdf" class="btn btn--ghost" download>⬇ Télécharger mon CV</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/votre-pseudo" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/votre-profil" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:henritolotraniaina@gmail.com">Email</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="avatar">
+            <!-- Remplacez par votre photo : <img src="assets/photo.jpg" alt="Photo de Tolotraniaina Henri"> -->
+            <span>TH</span>
+          </div>
+          <div class="floating-card card-1">&lt;/&gt; Web · DevOps · Data</div>
+          <div class="floating-card card-2">🎓 Master INT-MIT</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ À PROPOS ============ -->
+    <section class="section" id="apropos">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">À propos</span>
+          <h2 class="section__title">Qui suis-je ?</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              Je suis <strong>RABESIHARISON Tolotraniaina Henri</strong>, étudiant en
+              <strong>Master Innovation et Technologie (INT-MIT)</strong> à l'<strong>Université d'Antananarivo</strong>,
+              titulaire d'une licence en <strong>Probabilité-Statistique, Algèbre Algorithmique et Calcul Numérique (PAAC)</strong>.
+            </p>
+            <p>
+              Mon parcours mêle <strong>mathématiques</strong>, <strong>programmation</strong> et <strong>infrastructure</strong> :
+              développement web, DevOps, réseau et système, analyse de données. Je me forme actuellement au
+              <strong>web scraping avec l'IA générative</strong>.
+            </p>
+          </div>
+
+          <div class="stats reveal">
+            <div class="stat"><strong data-count="9">0</strong><span>Langages &amp; outils de calcul</span></div>
+            <div class="stat"><strong data-count="7">0</strong><span>Domaines techniques</span></div>
+            <div class="stat"><strong data-count="3">0</strong><span>Langues parlées</span></div>
+            <div class="stat"><strong data-count="2">0</strong><span>Conférences suivies</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMPÉTENCES ============ -->
+    <section class="section section--alt" id="competences">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Compétences</span>
+          <h2 class="section__title">Mes outils &amp; technologies</h2>
+        </div>
+
+        <div class="skill-cards">
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">🌐</div>
+            <h3>Développement Web</h3>
+            <div class="chips"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>DOM</span><span>React</span><span>PHP</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">⚙️</div>
+            <h3>DevOps</h3>
+            <div class="chips"><span>Git</span><span>Linux</span><span>Automatisation</span><span>Déploiement</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">🖧</div>
+            <h3>Réseau &amp; Système</h3>
+            <div class="chips"><span>Réseaux</span><span>Linux</span><span>Windows</span><span>Administration système</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">💻</div>
+            <h3>Langages de programmation</h3>
+            <div class="chips"><span>C</span><span>C++</span><span>Python</span><span>R</span><span>Java</span><span>PHP</span><span>Maple</span><span>SageMath</span><span>LaTeX</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">📊</div>
+            <h3>Données &amp; Bases de données</h3>
+            <div class="chips"><span>MySQL</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Statistiques</span><span>ACP</span></div>
+          </article>
+
+          <article class="skill-card skill-card--progress reveal">
+            <div class="skill-card__icon">🤖</div>
+            <h3>Web scraping &amp; IA générative</h3>
+            <span class="status">En cours de formation</span>
+            <div class="chips"><span>Web scraping</span><span>IA générative</span><span>Extraction de données</span></div>
+          </article>
+        </div>
+
+        <div class="tags reveal">
+          <span>Visual Studio Code</span><span>Jupyter Notebook</span><span>Qt Creator</span><span>IntelliJ IDEA</span>
+          <span>Word</span><span>Excel</span><span>PowerPoint</span>
+          <span>Organisation</span><span>Coordination d'équipe</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJETS ============ -->
+    <section class="section" id="projets">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Projets</span>
+          <h2 class="section__title">Mes réalisations</h2>
+        </div>
+
+        <div class="filters reveal">
+          <button class="filter active" data-filter="all">Tous</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="devops">DevOps &amp; Réseau</button>
+          <button class="filter" data-filter="data">Data &amp; IA</button>
+        </div>
+
+        <!-- Exemples à remplacer par vos vrais projets (titre, description, liens GitHub/démo) -->
+        <div class="projects__grid">
+          <article class="project reveal" data-category="web">
+            <div class="project__img grad-1">🌐</div>
+            <div class="project__body">
+              <h3>Application web (à compléter)</h3>
+              <p>Décrivez votre projet web : objectif, fonctionnalités et votre rôle.</p>
+              <div class="tags tags--small"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span></div>
+              <div class="project__links">
+                <a href="#" target="_blank" rel="noopener">Démo →</a>
+                <a href="#" target="_blank" rel="noopener">Code →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="devops">
+            <div class="project__img grad-2">⚙️</div>
+            <div class="project__body">
+              <h3>Projet DevOps / Infrastructure (à compléter)</h3>
+              <p>Par exemple : automatisation d'un déploiement, configuration d'un serveur Linux ou d'un réseau.</p>
+              <div class="tags tags--small"><span>Linux</span><span>Git</span><span>Réseau</span></div>
+              <div class="project__links">
+                <a href="#" target="_blank" rel="noopener">Code →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="data">
+            <div class="project__img grad-3">📊</div>
+            <div class="project__body">
+              <h3>Analyse de données (à compléter)</h3>
+              <p>Analyse statistique avec Python : nettoyage, visualisation et interprétation (Pandas, ACP).</p>
+              <div class="tags tags--small"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
+              <div class="project__links">
+                <a href="#" target="_blank" rel="noopener">Notebook →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="data">
+            <div class="project__img grad-4">🤖</div>
+            <div class="project__body">
+              <h3>Web scraping avec IA générative (en cours)</h3>
+              <p>Projet en construction dans le cadre de ma formation : extraction et structuration de données web assistées par IA.</p>
+              <div class="tags tags--small"><span>Python</span><span>Scraping</span><span>IA générative</span></div>
+              <div class="project__links">
+                <a href="#" target="_blank" rel="noopener">Bientôt →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PARCOURS ============ -->
+    <section class="section section--alt" id="parcours">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Parcours</span>
+          <h2 class="section__title">Formation &amp; parcours</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <span class="timeline__date">En cours</span>
+            <h3>Master en Innovation et Technologie (INT-MIT)</h3>
+            <p>Université d'Antananarivo, Madagascar.</p>
+          </div>
+          <div class="timeline__item reveal">
+            <span class="timeline__date">2025</span>
+            <h3>Licence en Probabilité-Statistique, Algèbre Algorithmique et Calcul Numérique (PAAC)</h3>
+            <p>Université d'Antananarivo, Madagascar.</p>
+          </div>
+        </div>
+
+        <div class="extra__grid">
+          <div class="extra reveal">
+            <h3>🎤 Conférences &amp; séminaires</h3>
+            <ul>
+              <li><strong>Juillet 2023</strong> : en l'honneur du Dr Gérard RAZAFINATSOA, Université d'Antananarivo</li>
+              <li><strong>Mars 2023</strong> : en l'honneur du Pr ANONA MANELO Frédéric, Université d'Antananarivo</li>
+            </ul>
+          </div>
+          <div class="extra reveal">
+            <h3>🗣️ Langues</h3>
+            <ul>
+              <li><strong>Malgache</strong> : langue maternelle</li>
+              <li><strong>Français</strong> : lu, parlé, écrit</li>
+              <li><strong>Anglais</strong> : lu, parlé, écrit</li>
+            </ul>
+          </div>
+          <div class="extra reveal">
+            <h3>🎯 Centres d'intérêt</h3>
+            <ul>
+              <li><strong>Jeux</strong> : fanorona, dominos, échecs</li>
+              <li><strong>Sport</strong> : natation, football, cyclisme</li>
+              <li><strong>Loisirs</strong> : musique, lecture</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Contact</span>
+          <h2 class="section__title">Travaillons ensemble</h2>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <p>Un stage, une opportunité, un projet ou une question ? Écrivez-moi, je vous réponds rapidement.</p>
+            <ul>
+              <li>📧 <a href="mailto:henritolotraniaina@gmail.com">henritolotraniaina@gmail.com</a></li>
+              <li>📞 <a href="tel:+261346046026">+261 34 60 460 26</a></li>
+              <li>📍 Antananarivo, Madagascar</li>
+            </ul>
+          </div>
+
+          <form class="form reveal" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required>
+              <small class="error"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+              <small class="error"></small>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+              <small class="error"></small>
+            </div>
+            <button type="submit" class="btn btn--primary">Envoyer le message</button>
+            <p class="form__status" id="form-status" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> RABESIHARISON Tolotraniaina Henri. Tous droits réservés.</p>
+      <a href="#accueil">Retour en haut ↑</a>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Retour en haut">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
